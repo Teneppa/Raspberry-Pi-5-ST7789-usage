@@ -1,5 +1,5 @@
 # Raspberry-Pi-5-ST7789-usage
-A short documentation on how to get ST7789 SPI display working on the Raspberry Pi 5
+A short documentation on how to get ST7789[V3] SPI display working on the Raspberry Pi 5
 
 Test environment:
 * Raspberry Pi 5 Model B 4GB with Debian 12 (bookworm) kernel 6.1.0-rpi7-rpi-2712
@@ -46,3 +46,5 @@ sudo nano /boot/firmware/config.txt
 * Make sure that the same resolution is set in dtparam at the end of the config.txt
 
 And after saving the config and rebooting the display should work right.
+
+**p.s. at least on my display there is an offset issue (right side is missing 40px), if someone figures this out lmk!**
